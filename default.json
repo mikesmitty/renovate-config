@@ -7,5 +7,8 @@
   "configMigration": true,
   "dependencyDashboardOSVVulnerabilitySummary": "all",
   "osvVulnerabilityAlerts": true,
+  "schedule": [
+    "before 9am on Saturday"
+  ],
   "timezone": "America/New_York"
 }
