@@ -1,0 +1,33 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":semanticCommits",
+    ":preserveSemverRanges"
+  ],
+  "packageRules": [
+    {
+      "matchFileNames": ["examples/**", "test/**", ".github/**", "infra/**"],
+      "commitMessagePrefix": "chore(deps):"
+    },
+    {
+      "matchFileNames": ["*", "modules/**"],
+      "commitMessagePrefix": "fix(deps):"
+    },
+    {
+      "matchFileNames": ["*", "modules/**"],
+      "matchUpdateTypes": "major",
+      "commitMessagePrefix": "fix(deps)!:"
+    },
+    {
+      "matchDepTypes": ["require"],
+      "groupName": "Go modules",
+      "postUpdateOptions": ["gomodTidy"]
+    },
+    {
+      "matchDatasources": ["golang-version"],
+      "rangeStrategy": "bump",
+      "postUpdateOptions": ["gomodTidy"]
+    }
+  ]
+}
