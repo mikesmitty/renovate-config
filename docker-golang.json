@@ -3,7 +3,9 @@
   "extends": [
     "config:recommended",
     ":semanticCommits",
-    ":preserveSemverRanges"
+    ":preserveSemverRanges",
+    ":maintainLockFilesMonthly",
+    ":automergeMinor"
   ],
   "packageRules": [
     {
