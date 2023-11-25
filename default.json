@@ -17,7 +17,7 @@
   ],
   "osvVulnerabilityAlerts": true,
   "schedule": [
-    "before 9am on Saturday"
+    "at any time"
   ],
   "timezone": "America/New_York"
 }
