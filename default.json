@@ -8,7 +8,8 @@
   "dependencyDashboardOSVVulnerabilitySummary": "all",
   "hostRules": [
     {
-      "matchHost": "https://api.github.com/",
+      "matchHost": "api.github.com",
+      "hostType": "github",
       "encrypted": {
         "token": "wcFMA/xDdHCJBTolAQ//d1oActUSq5YIDRuo8/6p/HnUUIVG7W9TAWi8TQP2oYs3/C71Wll5UFLv/9MTJyZSKNNR1UzZQR/ahF1vtAcdpxCv+6pSX01B5sVPYRZ49Z2k+Os15pGzu051MA+R213cVBo5F1scZ2XLC+UpoghmiLlsQogw7R2sRWHr43Db2iN/dPOnGd2FQk5IMoJWU4klpgmAtAe1SpDf5v7AvRS1CtivTY8QeBqY2JKFxjoiICgUB5AM33xHiIl54HO9ya5C8res4ClNw6zf/LprYECg/HPRNQo8R/rpaNqpTyaPCRqPx4iZqwxb/tagqTjYxljMKKVZg9gxYgMp0g4HPeH6FSAJlqpYFWTZB6gsFE9Htc/sZyO/0lA8anpXRu9Xj7V1obpqQ+8ZNiM65n/FFgJha34Uiq6ZbJbfZHO0Ma06NuK1jEDwwxqi+PZlM7QTy/9MQX/zmjQsF6BRVPXwq1fiiiLcNrkaxiIIj/K9Ak2mWuzpEgDnBrX70Stf52hyLcB+Ur+QxyWJ+mWSJ2PAiWbeKawu6ba06hCNDWCA9cklMuvdw9uJSVVVYDyq63BCA0q40iLk4MFcFFf+BeWfwc8pPLqTSlHKC5sBJt36uCkq0gmEAFncHN7T7RC+a5SFSOqSZ4ikaJ0n1N+avk5uU0/5wMyklJZRDG4QW/PKyUiCK1jSeQEYENYK/iAZFeiBQ3rZJ9iPp1UL8uN4H8frCNdspzvrCUvovIOIMtsDKS+m/yTOhphvv1Jv1BqeE4yeZhxkUwzruSW5Ae8ogVeAWBS1sxO6weLwEMLYx2vZp3fTivtBgRPU8GYEvkp/WzrZ7cjtQPnxEyBw4T3Oj5E"
       }
