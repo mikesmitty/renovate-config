@@ -5,7 +5,7 @@
     ":semanticCommits"
   ],
   "configMigration": true,
-  "dependencyDashboardOSVVulnerabilitySummary": "all",
+  "dependencyDashboardOSVVulnerabilitySummary": "none",
   "hostRules": [
     {
       "matchHost": "https://api.github.com/repos/renovatebot/osv-offline/releases",
@@ -28,7 +28,7 @@
       }
     }
   ],
-  "osvVulnerabilityAlerts": true,
+  "osvVulnerabilityAlerts": false,
   "schedule": [
     "at any time"
   ],
