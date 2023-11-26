@@ -8,12 +8,7 @@
   "dependencyDashboardOSVVulnerabilitySummary": "all",
   "hostRules": [
     {
-      "matchHost": "https://api.github.com/repos/renovatebot/osv-offline/releases",
-      "encrypted": {
-        "token": "wcFMA/xDdHCJBTolARAAjo7KodHSv7YE/gGeRlUW8CB4vzeq5ML9k3BcH8yh4riO2GkltjxZT5StMzSkRrfvKh9TwCLOSBwOYB+onQfJV+hJi7j6uO8kkwphu1awfApxlf6kmOkE6vhtAv3tG28FUbRfyaNgTb40plYdSxSENVYEGQn815t5QDaeNkEjdTucHUfuVLM/roG6/WL0uT7djiYmG9sx8/pQD1754BkCoE5Ke7flRoGlSUEqlCJF3M3sbjCcUMPJQjDsvmMk1sAIzZxCkVLSWd778GbFYopto5QHzLdY9qGXsx+uqUL+ScidmJudLZnSmAAo1m8TdCDUoqi3MrtKezzwSJWhDdupZiOYzlfIQihtuXMW0JYjmKXdxe94VKG/eYRQU4it0jIVjPdtffs0Bf+SexJX0o/EFMaDA4++cXl4LFqTeaVX/mUz9D1JoWzdM/1NBssL2MrleiS47ftdU0zDWmvQLZRDG9rdrxdlnyz+r3WAaqn9po4DgQ6FgNK7jrESzZfDDl+wZO0/AJ4pzeNcRm/PpfRFx5GrLZrNQfFI9r8lgWt1q3EFOsUh+SQHEwcQIm3KrGGVgCx9WwVbRTZM+3BGNIsoJGi1j56Kdv7QPbtwdUGrqEBU9DyLI1diYo5vJ7pCna8i0KlJbHEVenU1KlM8DpIBpvOjdOfo9PNEYKMbO3v713LSeQFMlrNAD53gi5ktn8MLN52dhxhs2gZj2F5/btFhMo2De1VkKHmvxHKHYOVJ2cuWhAZmcDzULA0vMHIbHV61s6qC7YBr7dDdgwS3NuSri53mplV/hqKgyB3c3wQymrQ8LerrMapariYg8a1Jr94Je5FW/133vfoSwFI"
-      }
-    },
-    {
+      "matchHost": "api.github.com",
       "hostType": "github-tags",
       "encrypted": {
         "token": "wcFMA/xDdHCJBTolARAAjo7KodHSv7YE/gGeRlUW8CB4vzeq5ML9k3BcH8yh4riO2GkltjxZT5StMzSkRrfvKh9TwCLOSBwOYB+onQfJV+hJi7j6uO8kkwphu1awfApxlf6kmOkE6vhtAv3tG28FUbRfyaNgTb40plYdSxSENVYEGQn815t5QDaeNkEjdTucHUfuVLM/roG6/WL0uT7djiYmG9sx8/pQD1754BkCoE5Ke7flRoGlSUEqlCJF3M3sbjCcUMPJQjDsvmMk1sAIzZxCkVLSWd778GbFYopto5QHzLdY9qGXsx+uqUL+ScidmJudLZnSmAAo1m8TdCDUoqi3MrtKezzwSJWhDdupZiOYzlfIQihtuXMW0JYjmKXdxe94VKG/eYRQU4it0jIVjPdtffs0Bf+SexJX0o/EFMaDA4++cXl4LFqTeaVX/mUz9D1JoWzdM/1NBssL2MrleiS47ftdU0zDWmvQLZRDG9rdrxdlnyz+r3WAaqn9po4DgQ6FgNK7jrESzZfDDl+wZO0/AJ4pzeNcRm/PpfRFx5GrLZrNQfFI9r8lgWt1q3EFOsUh+SQHEwcQIm3KrGGVgCx9WwVbRTZM+3BGNIsoJGi1j56Kdv7QPbtwdUGrqEBU9DyLI1diYo5vJ7pCna8i0KlJbHEVenU1KlM8DpIBpvOjdOfo9PNEYKMbO3v713LSeQFMlrNAD53gi5ktn8MLN52dhxhs2gZj2F5/btFhMo2De1VkKHmvxHKHYOVJ2cuWhAZmcDzULA0vMHIbHV61s6qC7YBr7dDdgwS3NuSri53mplV/hqKgyB3c3wQymrQ8LerrMapariYg8a1Jr94Je5FW/133vfoSwFI"
