@@ -8,12 +8,6 @@
   "dependencyDashboardOSVVulnerabilitySummary": "all",
   "hostRules": [
     {
-      "matchHost": "https://api.github.com/repos/renovatebot/",
-      "encrypted": {
-        "token": "wcFMA/xDdHCJBTolAQ/+J6xKkSHPUM5U0VZ5dsKwyX+WVSWuoYNfdn8JXf/U7EtPHeSGQ0HGOkrXPaLV6BBmwJIrs10k94n6J8t06MlOPCo9fOksi194ymy5DMCmXCTl9nHvYJCiWtzg6Fl5PL1dH1WN4h60J6ZSmmMgzNjKmkKvggdoerJpyX23tXMrTpDsdhPgaVODpYkbIiKJJXGCh5qI9HtBgdfr64hdk3sZX7L/KGnC+kzmtjOpNVldjx5Cr8BhPHvRhf/4OePgfoMi7VfFq0nkmOC2xWSq8k3sSrC83Cl6IprEyc++prFJsNtvmV+qQMxlmd7MlEab9OjxxoZ+Ds1+jDy4CabEaEN/e66JKuBMWFtVAWHeEOVX2Jp2aIVUNi9CgUpbF9XSHPvPGr4gwAjP/06r1BMuoWaLkr5Mb9MC2MprPXhjYJYkXRbG3IUMcSmLZKS3ynkcsJ3q8k/IfS1C843FBS0c9W2uHZaZDQgtnzT5Y93TgVotxjJvJW9TggTM0LVvWu/8aakSJJa034UWVL6rMt6ekhybsWmLJk1R6My1PzDiJa/FTS3ORt5YG01F8pIjv7MY0f0Cr44GX54Psq6TvAHKN+ZstIaIxQER7p/na4H8EU9NctyREZbFiFOCGsPynSqSLDqDG+GAJvdnlX9Ld8Zk7cuu2eOS2phprhLXhUPxD9/0QlfSegGfueFfWmixWAzNBqWP3ZXRSRxmeDeb9oHGmUJY7QhwsHjU8DMU4mkOhE2djau8hOwbUaSbw3Z1lqdm5sEe+bQ5iaTBfu0GYhEbeQvuM7EqLHfiKXkSAUkgZXn0Uk6VsXP3va50lBPn4YiJ/VUYNMwxd1TR8SUgrtpa"
-      }
-    },
-    {
       "matchHost": "api.github.com",
       "hostType": "github-releases",
       "encrypted": {
