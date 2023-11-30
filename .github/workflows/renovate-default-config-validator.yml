@@ -2,15 +2,15 @@ name: renovate-config-validator
 
 on:
   pull_request:
+    paths:
+      - "default.json"
     branches:
       - main
-    paths:
-      - "renovate.json"
   push:
     branches:
       - main
     paths:
-      - "renovate.json"
+      - "default.json"
 
 jobs:
   validate:
