@@ -48,6 +48,6 @@ jobs:
       matrix:
         files: ${{ fromJson(needs.get-changed-files.outputs.matrix) }}
 
-    uses: mikesmitty/renovate-config/.github/workflows/validator.yml
+    uses: mikesmitty/renovate-config/.github/workflows/validator.yml@main
     with:
       config_file_path: ${{ matrix.files }}
