@@ -4,13 +4,10 @@ on:
   pull_request:
     branches:
       - main
-    paths:
-      - "renovate.json"
   push:
     branches:
       - main
-    paths:
-      - "renovate.json"
+  workflow_call:
 
 jobs:
   validate:
