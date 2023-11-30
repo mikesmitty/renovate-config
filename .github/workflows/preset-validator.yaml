@@ -1,0 +1,53 @@
+name: Renovate Preset
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "*.json"
+      - "*.json5"
+  push:
+    branches:
+      - main
+    paths:
+      - "*.json"
+      - "*.json5"
+
+jobs:
+  get-changed-files:
+    name: Get changed files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed json/json5 files
+        id: changed-files
+        uses: tj-actions/changed-files@v40
+        with:
+          escape_json: false
+          files: |
+            **.json
+            **.json5
+          json: true
+
+    outputs:
+      any-changed: ${{ steps.changed-files.outputs.any_changed }}
+      matrix: ${{ steps.changed-files.outputs.all_changed_files }}
+
+  renovate-preset-validation:
+    if: ${{ fromJson(needs.get-changed-files.outputs.any-changed) }}
+    needs: get-changed-files
+    name: Validate
+
+    strategy:
+      fail-fast: false
+      matrix:
+        files: ${{ fromJson(needs.get-changed-files.outputs.matrix) }}
+
+    uses: mikesmitty/renovate-config/.github/workflows/validator.yml
+    with:
+      config_file_path: ${{ matrix.files }}
