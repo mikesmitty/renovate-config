@@ -24,7 +24,9 @@
   ],
   "osvVulnerabilityAlerts": false,
   "schedule": [
-    "at any time"
+    "after 6pm every weekday",
+    "before 9am every weekday",
+    "every weekend"
   ],
   "timezone": "America/New_York"
 }
