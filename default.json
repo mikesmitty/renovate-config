@@ -12,7 +12,7 @@
         "(^|/)kustomization\\.ya?ml$"
       ],
       "matchStrings": [
-        "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*https:\\\/\\\/raw\\.githubusercontent\\.com\\\/[^\/]+\\\/[^\/]+\\\/(?<currentValue>[^\/]+)"
+        "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*https:\\\/\\\/raw\\.githubusercontent\\.com\\\/[^\/]+\\\/[^\/]+\\\/(?<currentValue>[^\/]+)"
       ]
     }
   ],
