@@ -1,0 +1,26 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "customManagers": [
+        // Regex manager for matching raw GitHub URLs, e.g.:
+        // https://raw.githubusercontent.com/argoproj/argo-cd/v2.9.3/manifests/ha/install.yaml
+        {
+            "customType": "regex",
+            "fileMatch": [
+                "(^|/)kustomization\\.ya?ml$"
+            ],
+            "matchStrings": [
+                "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*https:\\\/\\\/raw\\.githubusercontent\\.com\\\/[^\/]+\\\/[^\/]+\\\/(?<currentValue>[^\/]+)"
+            ]
+        },
+        // Regex manager for matching docker images
+        {
+            "customType": "regex",
+            "fileMatch": [
+                "\\.ya?ml$"
+            ],
+            "matchStrings": [
+                "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*image:\\s*[^\\s]+:(?<currentValue>[^\\s]+)"
+            ]
+        }
+    ]
+}
