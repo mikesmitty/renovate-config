@@ -2,20 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    ":semanticCommits"
+    ":semanticCommits",
+    "local>mikesmitty/renovate-config:regex-managers.json5"
   ],
   "configMigration": true,
-  "customManagers": [
-    {
-      "customType": "regex",
-      "fileMatch": [
-        "(^|/)kustomization\\.ya?ml$"
-      ],
-      "matchStrings": [
-        "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*https:\\\/\\\/raw\\.githubusercontent\\.com\\\/[^\/]+\\\/[^\/]+\\\/(?<currentValue>[^\/]+)"
-      ]
-    }
-  ],
   "dependencyDashboardOSVVulnerabilitySummary": "none",
   "hostRules": [
     {
