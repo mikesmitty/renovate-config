@@ -12,6 +12,17 @@
                 "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*https:\\\/\\\/raw\\.githubusercontent\\.com\\\/[^\/]+\\\/[^\/]+\\\/(?<currentValue>[^\/]+)"
             ]
         },
+        // Regex manager for matching GitHub release artifact URLs, e.g.:
+        // https://github.com/kubevirt/kubevirt/releases/download/${VERSION}/kubevirt-operator.yaml
+        {
+            "customType": "regex",
+            "fileMatch": [
+                "(^|/)kustomization\\.ya?ml$"
+            ],
+            "matchStrings": [
+                "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*https:\\\/\\\/github\\.com\\\/[^\/]+\\\/[^\/]+\\\/releases\\\/download\\\/(?<currentValue>[^\/]+)"
+            ]
+        },
         // Regex manager for matching docker images
         {
             "customType": "regex",
