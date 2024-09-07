@@ -11,16 +11,12 @@
     {
       "matchHost": "api.github.com",
       "hostType": "github-releases",
-      "encrypted": {
-        "token": "wcFMA/xDdHCJBTolAQ/+Nx4xe+vplah0m310F+IVDLJ8iI+DzFx4g0Kka9whhJme4cnyBDquOa3PKZ+NzIB2XfgZebKZawIg7XnPW3beFTQKlzuWgRN13O0ucn12XtikeheFAIrrYd8PBK7xc/TJ0yXo/DPeKO06TZ/j05sL6QqLn5nkiovjOTcEy02zngOnnndCtAmkyc8MTzYjsRzK+I36NZEoi1Q9CottvRzl39xX8/K3qCeoPNC9CohvmUNH1n+GxUXb9AiC6n+N3pZg10MkF/6nSiEvr7uZroCN6n4dB4L0fAD1NeQ1otHIVxHNlCvBUOA7A5Y1tHK+PmecjRkkF39hTecXc+TUvvarNO91ckYzU4mxroZrq/Wer1ORv+kpZ6TgGLT8+T8Es77ee5HkxJ93LYpe67YF3p8JtMxX0ju60W7pSZJtXhRZahA/bUSlgnUg+SaHfxekpPwOUgRKrNfno6y5gAz4czUKydgoGYJua8RQ8zf3w7Pq6t6H+oOAETs7zsn5O7fmnAmt6BNSnsyWvvsF/MdxI+7q6UjipFmboDZ/m9TmejhIUT843Z0FjULjmit+3o0p2I5BFZd9Wj96MTf5sgugUYdM5sdG7LsYAiiQj1zFcJ+gBYbCbERyA0b9MKOuerStt1w4YRqmpZ0qicoYXrjAjcGXKaErZc5avU3W4R1GCERWpeTSeQHXfz5hUdqGkJJ8/mk3/BBXGayLoBuk+T/1n/La2nNCDlzBthxIVX2RNH+NXKNNXP5DFwt+tctSfClgkOKbhvTuqA0NnEywyupO+P6fr1u08wrVangczanDEtbnZfhqIqqPK/MC8JPTiDG784itwfZHiozFeR51YhQ"
-      }
+      "token": "{{ secrets.GITHUB_TOKEN }}"
     },
     {
       "matchHost": "api.github.com",
       "hostType": "github-tags",
-      "encrypted": {
-        "token": "wcFMA/xDdHCJBTolAQ/+Nx4xe+vplah0m310F+IVDLJ8iI+DzFx4g0Kka9whhJme4cnyBDquOa3PKZ+NzIB2XfgZebKZawIg7XnPW3beFTQKlzuWgRN13O0ucn12XtikeheFAIrrYd8PBK7xc/TJ0yXo/DPeKO06TZ/j05sL6QqLn5nkiovjOTcEy02zngOnnndCtAmkyc8MTzYjsRzK+I36NZEoi1Q9CottvRzl39xX8/K3qCeoPNC9CohvmUNH1n+GxUXb9AiC6n+N3pZg10MkF/6nSiEvr7uZroCN6n4dB4L0fAD1NeQ1otHIVxHNlCvBUOA7A5Y1tHK+PmecjRkkF39hTecXc+TUvvarNO91ckYzU4mxroZrq/Wer1ORv+kpZ6TgGLT8+T8Es77ee5HkxJ93LYpe67YF3p8JtMxX0ju60W7pSZJtXhRZahA/bUSlgnUg+SaHfxekpPwOUgRKrNfno6y5gAz4czUKydgoGYJua8RQ8zf3w7Pq6t6H+oOAETs7zsn5O7fmnAmt6BNSnsyWvvsF/MdxI+7q6UjipFmboDZ/m9TmejhIUT843Z0FjULjmit+3o0p2I5BFZd9Wj96MTf5sgugUYdM5sdG7LsYAiiQj1zFcJ+gBYbCbERyA0b9MKOuerStt1w4YRqmpZ0qicoYXrjAjcGXKaErZc5avU3W4R1GCERWpeTSeQHXfz5hUdqGkJJ8/mk3/BBXGayLoBuk+T/1n/La2nNCDlzBthxIVX2RNH+NXKNNXP5DFwt+tctSfClgkOKbhvTuqA0NnEywyupO+P6fr1u08wrVangczanDEtbnZfhqIqqPK/MC8JPTiDG784itwfZHiozFeR51YhQ"
-      }
+      "token": "{{ secrets.GITHUB_TOKEN }}"
     }
   ],
   "osvVulnerabilityAlerts": false,
