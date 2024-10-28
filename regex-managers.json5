@@ -32,6 +32,16 @@
             "matchStrings": [
                 "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*image:\\s*[^\\s]+:(?<currentValue>[^\\s]+)"
             ]
+        },
+        // Regex manager for matching version variables in ipxe boot files
+        {
+            "customType": "regex",
+            "fileMatch": [
+                "\\.ipxe$"
+            ],
+            "matchStrings": [
+                "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*[^\\s]+_version\\s*[^\\s]+:(?<currentValue>[^\\s]+)"
+            ]
         }
     ]
 }
