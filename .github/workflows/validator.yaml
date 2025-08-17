@@ -14,7 +14,7 @@ jobs:
     name: Validate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: suzuki-shunsuke/github-action-renovate-config-validator@v1.1.1
         with:
           config_file_path: ${{ inputs.config_file_path }}
