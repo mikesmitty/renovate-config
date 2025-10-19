@@ -21,7 +21,7 @@
         },
         {
             "matchJsonata": [
-                "isBreaking == true"
+                "isBreaking = true"
             ],
             "commitMessagePrefix": "feat!:"
         },
