@@ -1,0 +1,38 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "matchUpdateTypes": [
+                "patch"
+            ],
+            "commitMessagePrefix": "fix:"
+        },
+        {
+            "matchUpdateTypes": [
+                "minor"
+            ],
+            "commitMessagePrefix": "feat:"
+        },
+        {
+            "matchUpdateTypes": [
+                "major"
+            ],
+            "commitMessagePrefix": "feat!:"
+        },
+        {
+            "matchJsonata": [
+                "isBreaking == true"
+            ],
+            "commitMessagePrefix": "feat!:"
+        },
+        {
+            "matchFileNames": [
+                "examples/**",
+                "test/**",
+                ".github/**",
+                "infra/**"
+            ],
+            "commitMessagePrefix": "chore:"
+        }
+    ]
+}
