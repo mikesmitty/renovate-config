@@ -30,7 +30,8 @@
                 "\\.ya?ml$"
             ],
             "matchStrings": [
-                "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+[-\\s]*image:\\s*[^\\s]+:(?<currentValue>[^\\s]+)"
+                "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+[-\\s]*image:\\s*[^\\s]+:(?<currentValue>[^\\s]+)",
+                "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+[-\\s]*tag:\\s*(?<currentValue>[^\\s]+)"
             ]
         },
         // Regex manager for matching version variables in ipxe boot files
