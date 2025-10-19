@@ -29,3 +29,5 @@ jobs:
             mikesmitty/whisper-wyoming-openvino
           github_token: ${{ secrets.RENOVATE_TOKEN }}
           concurrency: 10
+        env:
+          RELEASE_PLEASE_TOKEN: ${{ secrets.RELEASE_PLEASE_TOKEN }}
