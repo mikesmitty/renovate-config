@@ -27,5 +27,5 @@ jobs:
             mikesmitty/sht4x
             mikesmitty/voron-mods
             mikesmitty/whisper-wyoming-openvino
-          github_token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
+          github_token: ${{ secrets.RENOVATE_TOKEN }}
           concurrency: 10
