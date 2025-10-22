@@ -1,10 +1,9 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "customManagers": [
-        // Regex manager for matching raw GitHub URLs, e.g.:
-        // https://raw.githubusercontent.com/argoproj/argo-cd/v2.9.3/manifests/ha/install.yaml
         {
             "customType": "regex",
+            "description": "Match GitHub raw URLs in kustomization.yaml files",
             "fileMatch": [
                 "(^|/)kustomization\\.ya?ml$"
             ],
@@ -12,10 +11,9 @@
                 "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*https:\\\/\\\/raw\\.githubusercontent\\.com\\\/[^\/]+\\\/[^\/]+\\\/(?<currentValue>[^\/]+)"
             ]
         },
-        // Regex manager for matching GitHub release artifact URLs, e.g.:
-        // https://github.com/kubevirt/kubevirt/releases/download/${VERSION}/kubevirt-operator.yaml
         {
             "customType": "regex",
+            "description": "Match GitHub release artifact URLs in kustomization.yaml files",
             "fileMatch": [
                 "(^|/)kustomization\\.ya?ml$"
             ],
@@ -23,26 +21,37 @@
                 "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*https:\\\/\\\/github\\.com\\\/[^\/]+\\\/[^\/]+\\\/releases\\\/download\\\/(?<currentValue>[^\/]+)"
             ]
         },
-        // Regex manager for matching docker images
         {
             "customType": "regex",
-            "fileMatch": [
-                "\\.ya?ml$"
+            "description": "Match docker image tags in YAML files",
+            "managerFilePatterns": [
+                "/\\.ya?ml$/"
             ],
             "matchStrings": [
                 "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+[-\\s]*image:\\s*[^\\s]+:(?<currentValue>[^\\s]+)",
                 "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+[-\\s]*tag:\\s*(?<currentValue>[^\\s]+)"
             ]
         },
-        // Regex manager for matching version variables in ipxe boot files
         {
             "customType": "regex",
-            "fileMatch": [
-                "\\.ipxe$"
+            "description": "Match version variables in ipxe boot files",
+            "managerFilePatterns": [
+                "/\\.ipxe$/"
             ],
             "matchStrings": [
                 "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s*set\\s+[A-Za-z0-9_]+?_version [\"']?(?<currentValue>.+?)[\"']?\\s"
             ]
+        },
+        {
+            "customType": "regex",
+            "description": "OCI dependencies",
+            "managerFilePatterns": [
+                "/\\.ya?ml$/"
+            ],
+            "matchStrings": [
+                "oci://(?<depName>[^:]+):(?<currentValue>\\S+)"
+            ],
+            "datasourceTemplate": "docker"
         }
     ]
 }
