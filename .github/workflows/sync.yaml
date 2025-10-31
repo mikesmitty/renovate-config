@@ -24,6 +24,7 @@ jobs:
             mikesmitty/mdns-mesh
             mikesmitty/power-manifold
             mikesmitty/rp24-dcc-decoder
+            mikesmitty/rtl-sdr
             mikesmitty/sht4x
             mikesmitty/voron-mods
             mikesmitty/whisper-wyoming-openvino
