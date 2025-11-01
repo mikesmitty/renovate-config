@@ -20,6 +20,8 @@
       "token": "{{ secrets.GITHUB_TOKEN }}"
     }
   ],
+  "internalChecksAsSuccess": true,
+  "minimumReleaseAge": "3 days",
   "osvVulnerabilityAlerts": false,
   "schedule": [
     "after 6pm every weekday",
