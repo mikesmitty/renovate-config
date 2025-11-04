@@ -4,21 +4,21 @@
         {
             "customType": "regex",
             "description": "Match GitHub raw URLs in kustomization.yaml files",
-            "fileMatch": [
-                "(^|/)kustomization\\.ya?ml$"
+            "managerFilePatterns": [
+                "/(^|/)kustomization\\.ya?ml$/"
             ],
             "matchStrings": [
-                "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*https:\\\/\\\/raw\\.githubusercontent\\.com\\\/[^\/]+\\\/[^\/]+\\\/(?<currentValue>[^\/]+)"
+                "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*https:\\/\\/raw\\.githubusercontent\\.com\\/[^/]+\\/[^/]+\\/(?<currentValue>[^/]+)"
             ]
         },
         {
             "customType": "regex",
             "description": "Match GitHub release artifact URLs in kustomization.yaml files",
-            "fileMatch": [
-                "(^|/)kustomization\\.ya?ml$"
+            "managerFilePatterns": [
+                "/(^|/)kustomization\\.ya?ml$/"
             ],
             "matchStrings": [
-                "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*https:\\\/\\\/github\\.com\\\/[^\/]+\\\/[^\/]+\\\/releases\\\/download\\\/(?<currentValue>[^\/]+)"
+                "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+)(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-\\s*https:\\/\\/github\\.com\\/[^/]+\\/[^/]+\\/releases\\/download\\/(?<currentValue>[^/]+)"
             ]
         },
         {
