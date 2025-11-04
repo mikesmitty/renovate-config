@@ -13,6 +13,13 @@ on:
     paths:
       - "*.json"
       - "*.json5"
+  workflow_dispatch:
+    inputs:
+      validate_all:
+        description: 'Validate all JSON/JSON5 files'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   get-changed-files:
@@ -25,6 +32,7 @@ jobs:
           fetch-depth: 0
 
       - name: Get changed json/json5 files
+        if: ${{ !inputs.validate_all }}
         id: changed-files
         uses: tj-actions/changed-files@v47
         with:
@@ -34,9 +42,21 @@ jobs:
             **.json5
           json: true
 
+      - name: Get all json/json5 files
+        if: ${{ inputs.validate_all }}
+        id: all-files
+        run: |
+          files=$(find . -type f \( -name "*.json" -o -name "*.json5" \) -not -path "*/node_modules/*" -not -path "*/.git/*" | jq -R -s -c 'split("\n")[:-1]')
+          echo "all_files=$files" >> $GITHUB_OUTPUT
+          if [ -n "$files" ] && [ "$files" != "[]" ]; then
+            echo "any_files=true" >> $GITHUB_OUTPUT
+          else
+            echo "any_files=false" >> $GITHUB_OUTPUT
+          fi
+
     outputs:
-      any-changed: ${{ steps.changed-files.outputs.any_changed }}
-      matrix: ${{ steps.changed-files.outputs.all_changed_files }}
+      any-changed: ${{ inputs.validate_all && steps.all-files.outputs.any_files || steps.changed-files.outputs.any_changed }}
+      matrix: ${{ inputs.validate_all && steps.all-files.outputs.all_files || steps.changed-files.outputs.all_changed_files }}
 
   renovate-preset-validation:
     if: ${{ fromJson(needs.get-changed-files.outputs.any-changed) }}
