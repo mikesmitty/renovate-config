@@ -27,9 +27,11 @@
       "postUpdateOptions": ["gomodTidy"]
     },
     {
-      "matchDatasources": ["golang-version"],
-      "rangeStrategy": "bump",
-      "postUpdateOptions": ["gomodTidy"]
+      "description": "Disable golang version updates in go.mod",
+      "matchManagers": ["gomod"],
+      "matchDepNames": ["go"],
+      "matchDepTypes": ["golang"],
+      "enabled": false
     }
   ]
 }
