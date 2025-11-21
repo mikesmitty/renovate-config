@@ -3,6 +3,7 @@
   "extends": [
     "config:recommended",
     ":semanticCommits",
+    ":semanticPrefixFixDepsChoreOthers",
     "local>mikesmitty/renovate-config:conventional-commits.json",
     "local>mikesmitty/renovate-config:regex-managers.json5"
   ],
