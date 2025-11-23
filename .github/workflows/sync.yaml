@@ -21,6 +21,7 @@ jobs:
             mikesmitty/beacon-dcc
             mikesmitty/chilly-boy
             mikesmitty/docker-rtlamr-collect
+            mikesmitty/file-search
             mikesmitty/mdns-mesh
             mikesmitty/power-manifold
             mikesmitty/rp24-dcc-decoder
@@ -28,7 +29,7 @@ jobs:
             mikesmitty/sht4x
             mikesmitty/voron-mods
             mikesmitty/whisper-wyoming-openvino
-          github_token: ${{ secrets.RENOVATE_TOKEN }}
+          github_token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
           concurrency: 10
         env:
           RELEASE_PLEASE_TOKEN: ${{ secrets.RELEASE_PLEASE_TOKEN }}
