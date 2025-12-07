@@ -22,7 +22,7 @@
     }
   ],
   "internalChecksAsSuccess": true,
-  "minimumReleaseAge": "3 days",
+  "minimumReleaseAge": "1 days",
   "osvVulnerabilityAlerts": false,
   "schedule": [
     "after 6pm every weekday",
