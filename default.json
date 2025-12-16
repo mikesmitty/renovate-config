@@ -22,7 +22,6 @@
     }
   ],
   "internalChecksAsSuccess": true,
-  "minimumReleaseAge": "1 days",
   "osvVulnerabilityAlerts": false,
   "schedule": [
     "after 6pm every weekday",
