@@ -18,7 +18,7 @@ jobs:
           secrets: |
             ^RELEASE_PLEASE_TOKEN$
           repositories: |
-            mikesmitty/beacon-dcc
+            mikesmitty/beacon-dcc-tinygo
             mikesmitty/chilly-boy
             mikesmitty/docker-rtlamr-collect
             mikesmitty/file-search
@@ -27,6 +27,7 @@ jobs:
             mikesmitty/rp24-dcc-decoder
             mikesmitty/rtl-sdr
             mikesmitty/sht4x
+            mikesmitty/simple-dcc
             mikesmitty/voron-mods
             mikesmitty/whisper-wyoming-openvino
           github_token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
