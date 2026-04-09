@@ -19,6 +19,7 @@ jobs:
             ^RELEASE_PLEASE_TOKEN$
           repositories: |
             mikesmitty/beacon-dcc-tinygo
+            mikesmitty/canbus-outpost
             mikesmitty/chilly-boy
             mikesmitty/docker-rtlamr-collect
             mikesmitty/file-search
