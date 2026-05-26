@@ -23,6 +23,7 @@
   ],
   "internalChecksAsSuccess": true,
   "minimumReleaseAge": "1 days",
+  "minimumReleaseAgeBehaviour": "timestamp-optional",
   "osvVulnerabilityAlerts": false,
   "schedule": [
     "after 6pm every weekday",
