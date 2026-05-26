@@ -25,6 +25,17 @@
   "minimumReleaseAge": "1 days",
   "minimumReleaseAgeBehaviour": "timestamp-optional",
   "osvVulnerabilityAlerts": false,
+  "packageRules": [
+    {
+      "description": "Disable stability cooldown for datasources with no timestamps to prevent dashboard warnings",
+      "matchDatasources": [
+        "docker",
+        "git-tags",
+        "github-releases"
+      ],
+      "minimumReleaseAge": null
+    }
+  ],
   "schedule": [
     "after 6pm every weekday",
     "before 9am every weekday",
