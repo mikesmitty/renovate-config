@@ -18,6 +18,6 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 24
-      - uses: suzuki-shunsuke/github-action-renovate-config-validator@v2.3.0
+      - uses: suzuki-shunsuke/github-action-renovate-config-validator@v2.4.1
         with:
           config_file_path: ${{ inputs.config_file_path }}
