@@ -23,6 +23,7 @@ jobs:
             mikesmitty/chilly-boy
             mikesmitty/docker-rtlamr-collect
             mikesmitty/file-search
+            mikesmitty/interlock
             mikesmitty/mdns-mesh
             mikesmitty/power-manifold
             mikesmitty/rp24-dcc-decoder
